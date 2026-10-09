@@ -7,20 +7,16 @@
 | Работа | Вариант | Тема | Исполняемая команда |
 |---|---|---|---|
 | ПКП-1 | A | «Программный интерфейс обработки заявок» — каркас сервиса: конфигурация из окружения, `/livez` и `/readyz`, middleware идентификатора запроса, интерфейс `Pinger`, мягкая остановка с бюджетом | `cmd/application-command` |
-| ПКП-1 | B | «Сервис приёма пакетных задач» — каркас сервиса `order-command` с аналогичной структурой (config, httpserver, lifecycle-тесты) | `cmd/order-command` |
 | ПКП-2 | A | «Заявка на согласование» — агрегат `Application` (домен + сервис + memory-репозиторий), ADR о границе уведомлений об одобрении | `cmd/application-command` |
-| ПКП-2 | B | «Резервирование ресурса» — агрегат `Reservation` (домен + сервис + memory-репозиторий), ADR о границе бронирования расписания | `cmd/order-command` |
 
 ## Структура репозитория
 
 ```
 ├── ПКП-1/
-│   ├── Вариант-A/     # каркас: internal/platform/{config,httpserver}, docs/experiments
-│   └── Вариант-B/     # каркас: internal/platform/{config,httpserver}, docs/experiments
+│   └── Вариант-A/     # каркас: internal/platform/{config,httpserver}, docs/experiments
 ├── ПКП-2/
-│   ├── Вариант-A/     # internal/{application,order,platform}, docs/adr, docs/experiments
-│   └── Вариант-B/     # internal/{order,reservation,platform}, docs/adr, docs/experiments
-└── Отчёты/            # 4 отчёта по всем работам и вариантам
+│   └── Вариант-A/     # internal/{application,order,platform}, docs/adr, docs/experiments
+└── Отчёты/            # 2 отчёта (вариант A каждой работы)
 ```
 
 В `docs/experiments/` зафиксированы эксперименты жизненного цикла (остановка с активным запросом), в `docs/adr/` — архитектурные решения. Логи реальных запусков (`run*.log`) сохранены рядом с кодом как факты для отчётов.
@@ -41,6 +37,6 @@ go build -o application-command.exe ./cmd/application-command
 
 ## Отчёты
 
-Подробные отчёты о выполнении каждой работы: папка [`Отчёты/`](Отчёты/) — `ПКП-1-Вариант-A.md`, `ПКП-1-Вариант-B.md`, `ПКП-2-Вариант-A.md`, `ПКП-2-Вариант-B.md`.
+Подробные отчёты о выполнении каждой работы: папка [`Отчёты/`](Отчёты/) — `ПКП-1-Вариант-A.md`, `ПКП-2-Вариант-A.md`.
 
 Сборочные артефакты (`*.exe`) в репозиторий не включены.
