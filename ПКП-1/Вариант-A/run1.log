@@ -1,0 +1,6 @@
+{"time":"2026-10-04T23:33:03.1186115+03:00","level":"INFO","msg":"http server started","service":"application-api","address":":8080"}
+{"time":"2026-10-04T23:47:41.8155916+03:00","level":"INFO","msg":"http request completed","method":"GET","path":"/livez","request_id":"6793b20f012cd14e4b1d3ad28631f7e3","duration_ms":0}
+{"time":"2026-10-04T23:47:41.8707302+03:00","level":"INFO","msg":"http request completed","method":"GET","path":"/readyz","request_id":"cbcebd89977fcd783683a6ada9bb5b00","duration_ms":0}
+{"time":"2026-10-04T23:47:41.8958287+03:00","level":"INFO","msg":"http request completed","method":"GET","path":"/livez","request_id":"Order-Flow-2026-10-04_01","duration_ms":0}
+{"time":"2026-10-04T23:47:41.929099+03:00","level":"INFO","msg":"http request completed","method":"GET","path":"/livez","request_id":"502e21b3b9b2bcc359736050ac775946","duration_ms":0}
+{"time":"2026-10-04T23:47:58.1605585+03:00","level":"INFO","msg":"http request completed","method":"GET","path":"/slow","request_id":"36ff64232cd7a2e1ff2f79f6fc591409","duration_ms":3000}
