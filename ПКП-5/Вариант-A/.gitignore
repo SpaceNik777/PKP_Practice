@@ -1,0 +1,7 @@
+# Собранный бинарник и журналы запусков
+application-command.exe
+kafka-producer.exe
+order-command-worker.exe
+application-command-producer.exe
+application-command-worker.exe
+*.log
